@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Justify-Content Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+  }
+  .container div {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h2>1. flex-start (default)</h2>
+<div class="container" style="justify-content: flex-start;">
+  <div>Item1</div>
+  <div>Item2</div>
+  <div>Item3</div>
+</div>
+
+<h2>2. center</h2>
+<div class="container" style="justify-content: center;">
+  <div>Item1</div>
+  <div>Item2</div>
+  <div>Item3</div>
+</div>
+
+<h2>3. flex-end</h2>
+<div class="container" style="justify-content: flex-end;">
+  <div>Item1</div>
+  <div>Item2</div>
+  <div>Item3</div>
+</div>
+
+<h2>4. space-between</h2>
+<div class="container" style="justify-content: space-between;">
+  <div>Item1</div>
+  <div>Item2</div>
+  <div>Item3</div>
+</div>
+
+<h2>5. space-around</h2>
+<div class="container" style="justify-content: space-around;">
+  <div>Item1</div>
+  <div>Item2</div>
+  <div>Item3</div>
+</div>
+
+<h2>6. space-evenly</h2>
+<div class="container" style="justify-content: space-evenly;">
+  <div>Item1</div>
+  <div>Item2</div>
+  <div>Item3</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px 40px;
+
+
+}
+.logo{
+    cursor: pointer;
+}
+.nav-links{
+    padding-top: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    font-size: 17px;
+}
+.nav-link{
+    text-decoration: none;
+  
+}
+.banner{
+    background:url(/img/banner.jpg);
+    background-size: cover;
+    background-position: center;/*crop img bg*/
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+  
+}
+.banner-content {
+    display: flex;
+    flex-direction: column; /* stack h1, p, buttons vertically */
+    align-items: center;    /* center horizontally */
+    text-align: center;
+    padding-top: 10%;
+}
+#welcome{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+#btn{
+   border: 2px solid pink;
+   background-color: pink;
+   color: #000000;
+    padding:10px;
+    border-radius: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-content-banner {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+/* Parent menu */
+.has-dropdown {
+  position: relative;
+}
+
+/* Hide dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: pink;
+  min-width: 60px;
+  list-style: none;
+  padding: 0;
+
+}
+
+/* Show dropdown on hover */
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown li a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background: #ffffff;
+}
+
+
+
+/* need dev */
+.search{
+    background: none;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 20vh;
+    height: 4vh;
+    outline: none;
+    box-shadow: none;
+  
+}
+
+
+
+.search:hover{
+    border-color: rgb(112, 0, 217);
+   
+}
+#header1{
+    text-align: left;
+    color:rgb(0, 0, 0);
+}
+.introduce{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    gap: 100px;
+    margin: 50px;
+    
+}
+
+.card{
+    display: flex;
+  
+    justify-content: center;
+    gap: 2rem;
+    margin:80px;
+   
+}
+.card h1{
+    color: 
+    rgb(0, 0, 0);
+    padding: 7px;
+}
+.c-flower{
+   border-style:0.5px solid black ;
+   box-shadow:1px 1px 1px 1px #534c4c;
+   padding: 5px;
+   border-radius: 0.5rem;
+}
+#header2{
+    color: rgb(76, 0, 76);
+    text-align: center;
+
+}
