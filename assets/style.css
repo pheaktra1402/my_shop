@@ -1,4 +1,7 @@
 
+html, body{
+    overflow-x: hidden;
+}
 
 *{
     margin: 0;
@@ -11,7 +14,26 @@
     justify-content: space-between;
     padding: 10px 40px;
 
+}
+/* need dev */
+.search{
+    position: relative;
+    background: none;
+    border:2px solid white;
+    border-radius: 10px;
+    width: 20vh;
+    height: 4vh;
+    outline: none;
+    box-shadow: none;
+   
+  
+}
 
+
+
+.search:hover{
+    border-color: rgb(112, 0, 217);
+   
 }
 .logo{
     cursor: pointer;
@@ -43,10 +65,10 @@
     ), url("/img/banner.jpg");
 
     background-size: cover;
-    background-position: center;
+   
     background-repeat: no-repeat;
     min-height: 60vh;
-    height: 95vh;
+    height: 100vh;
    
 }
 
@@ -115,27 +137,6 @@
   background: #ffffff;
 }
 
-
-
-/* need dev */
-.search{
-    background: none;
-    border:2px solid white;
-    border-radius: 10px;
-    width: 20vh;
-    height: 4vh;
-    outline: none;
-    box-shadow: none;
-   
-  
-}
-
-
-
-.search:hover{
-    border-color: rgb(112, 0, 217);
-   
-}
 #header1{
     text-align: left;
     color:rgb(0, 0, 0);
@@ -151,7 +152,6 @@
 
 .card{
     display: flex;
-  
     justify-content: center;
     gap: 2rem;
     margin:80px;
@@ -167,81 +167,34 @@
    padding: 5px;
    border-radius: 0.5rem;
 }
-#header2{
+.header2{
     color: rgb(76, 0, 76);
     text-align: center;
+    font-size: 2rem;
 
 }
-@media screen and (max-width:100px) {
-    .header{
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        
-    }
-    .banner{
-         height: 80vh;
-    }
-    .banner-content{
-        padding: 0;
-        height: 100vh;
-        text-align: center;
-    }
-    .card{
-       display: grid; 
-       grid-template-columns: 1fr;
-
-    }
+/* phone */
+@media screen and (max-width:600px){
     
-}
-@media screen and (max-width:700px) {
-    .header{
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        
-    }
+        .nav-links{
+            flex-direction: column;
+        }
+    
     .banner{
-         height: 80vh;
-    }
-    .banner-content{
-        padding: 0;
-        height: 100vh;
-        text-align: center;
-    }
-    .card{
-       display: grid; 
-       grid-template-columns: 1fr;
-
+        height: 100%;
     }
     .introduce{
-        display: grid;
-        grid-template-columns: 1fr;
         flex-direction: column;
-    }
-    
-}
-.product1{
-    display: grid;
-     grid-template-columns: repeat(4,1fr);
-    
-
-}
-@media screen and (max-width:992px){
-    .header{
-        flex-direction: column;
-        text-align: center;
-        gap:10px
-    }
-    .banner{
-        padding: 0;
-        height: 100vh;
-        text-align: center;
-
+        gap: 2rem;
     }
     .card{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
+
+}
+/* tablet */
+@media screen and (min-width:480px)and (max-width:768px){
+
     
 }
