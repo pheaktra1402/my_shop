@@ -1,5 +1,12 @@
+html, body{
+    overflow-x: hidden;
+}
 
-* {
+*{
+    box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -151,24 +158,47 @@
   border-radius: 0.5rem;
 }
 .header2 {
+  margin-top: 3rem;
   color: rgb(76, 0, 76);
   text-align: center;
   font-size: 2rem;
+  text-decoration: underline;
 }
 .card-product {
+  margin: 5rem;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  margin: 20px;
 }
 .card-product img {
-  width: 20rem;
-  height: 24rem;
+  width: 26rem;
+  max-width: 280px;
+  height: 22rem;
   display: block;
   border-style: 0.5px solid rgb(255, 255, 255);
   box-shadow: 0px 1px 0px 2px rgb(181, 179, 179);
   border-radius: 100px;
+}
+.descp {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 0.3rem;
+  margin-top: 0.7rem;
+  background-color: pink;
+  border-radius: 20px;
+  text-align: start;
+}
+.btn-buy {
+  margin-top: 0.5rem;
+  border: none;
+  color: #ffffff;
+  background-color: rgb(7, 39, 225);
+  width: 5rem;
+  height: 3rem;
+  border-radius: 15px;
+}
+.btn-buy:hover {
+  background-color: rgb(114, 4, 92);
 }
 
 /* tablet */
@@ -185,11 +215,10 @@
     gap: 1.5rem;
   }
   .card-product {
-    display: block;
+    display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
- 
 }
 /* phone */
 @media screen and (max-width: 600px) {
@@ -220,5 +249,4 @@
     place-items: center;
     grid-template-columns: 1fr;
   }
-  
 }
